@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>AI Assistant</title>
+  <link rel="stylesheet" type="text/css" href="/styles.css">
+</head>
+<body>
+  <h1>AI Assistant</h1>
+  <form id="queryForm" method="POST" action="/query">
+    <input type="text" name="query" placeholder="Ask me something..." required>
+    <button type="submit">Send</button>
+  </form>
+  <p><strong>Response:</strong></p>
+  <pre><%= response %></pre>
+</body>
+</html>
